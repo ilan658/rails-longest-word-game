@@ -1,0 +1,11 @@
+<!-- app/views/games/score.html.erb -->
+
+<h1>Your Results</h1>
+
+<p>Your word: <strong><%= @word %></strong></p>
+<p>Grid used: <%= @letters.join(', ') %></p>
+<p>Time Taken to answer: <%= @time_taken.round(2) %> seconds</p>
+<p>Your score: <%= @score.round(2) %></p>
+<p>Message: <%= @message %></p>
+
+<%= link_to 'Play again', new_path, class: 'btn btn-primary mt-4' %>
